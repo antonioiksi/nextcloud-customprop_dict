@@ -2,7 +2,7 @@
 	<div id="content" class="app-notestutorial">
 		<AppNavigation>
 			<AppNavigationNew v-if="!loading"
-				:text="t('notestutorial', 'New note')"
+				:text="t('notestutorial', 'New element')"
 				:disabled="false"
 				button-id="new-notestutorial-button"
 				button-class="icon-add"
@@ -10,7 +10,7 @@
 			<ul>
 				<AppNavigationItem v-for="note in notes"
 					:key="note.id"
-					:title="note.title ? note.title : t('notestutorial', 'New note')"
+					:title="note.title ? note.title : t('notestutorial', 'New element')"
 					:class="{active: currentNoteId === note.id}"
 					@click="openNote(note)">
 					<template slot="actions">
@@ -33,6 +33,7 @@
 				<input ref="title"
 					v-model="currentNote.title"
 					type="text"
+					style="margin-top: 40px"
 					:disabled="updating">
 				<textarea ref="content" v-model="currentNote.content" :disabled="updating" />
 				<input type="button"
@@ -114,7 +115,7 @@ export default {
 
 	methods: {
 		/**
-		 * Create a new note and focus the note content field automatically
+		 * Create a New element and focus the note content field automatically
 		 * @param {Object} note Note object
 		 */
 		openNote(note) {
@@ -128,7 +129,7 @@ export default {
 		},
 		/**
 		 * Action tiggered when clicking the save button
-		 * create a new note or save
+		 * create a New element or save
 		 */
 		saveNote() {
 			if (this.currentNoteId === -1) {
@@ -138,7 +139,7 @@ export default {
 			}
 		},
 		/**
-		 * Create a new note and focus the note content field automatically
+		 * Create a New element and focus the note content field automatically
 		 * The note is not yet saved, therefore an id of -1 is used until it
 		 * has been persisted in the backend
 		 */
@@ -156,14 +157,14 @@ export default {
 			}
 		},
 		/**
-		 * Abort creating a new note
+		 * Abort creating a New element
 		 */
 		cancelNewNote() {
 			this.notes.splice(this.notes.findIndex((note) => note.id === -1), 1)
 			this.currentNoteId = null
 		},
 		/**
-		 * Create a new note by sending the information to the server
+		 * Create a New element by sending the information to the server
 		 * @param {Object} note Note object
 		 */
 		async createNote(note) {
