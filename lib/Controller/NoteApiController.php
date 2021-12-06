@@ -26,7 +26,6 @@ class NoteApiController extends ApiController {
 	}
 
 	/**
-	 * @CORS
 	 * @NoCSRFRequired
 	 * @NoAdminRequired
 	 */
