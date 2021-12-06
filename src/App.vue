@@ -33,7 +33,7 @@
 				<input ref="title"
 					v-model="currentNote.title"
 					type="text"
-					style="margin-top: 50px"
+					style="margin-top: 40px"
 					:disabled="updating">
 				<textarea ref="content" v-model="currentNote.content" :disabled="updating" />
 				<input type="button"
