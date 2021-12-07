@@ -1,15 +1,15 @@
 <?php
 
-namespace OCA\NotesTutorial\Tests\Unit\Controller;
+namespace OCA\customprop_dict\Tests\Unit\Controller;
 
 use PHPUnit\Framework\TestCase;
 
 use OCP\AppFramework\Http;
 use OCP\IRequest;
 
-use OCA\NotesTutorial\Service\NoteNotFound;
-use OCA\NotesTutorial\Service\NoteService;
-use OCA\NotesTutorial\Controller\NoteController;
+use OCA\customprop_dict\Service\NoteNotFound;
+use OCA\customprop_dict\Service\NoteService;
+use OCA\customprop_dict\Controller\NoteController;
 
 class NoteControllerTest extends TestCase {
 	protected $controller;

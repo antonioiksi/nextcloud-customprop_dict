@@ -1,14 +1,14 @@
 <?php
 
-namespace OCA\NotesTutorial\Service;
+namespace OCA\customprop_dict\Service;
 
 use Exception;
 
 use OCP\AppFramework\Db\DoesNotExistException;
 use OCP\AppFramework\Db\MultipleObjectsReturnedException;
 
-use OCA\NotesTutorial\Db\Note;
-use OCA\NotesTutorial\Db\NoteMapper;
+use OCA\customprop_dict\Db\Note;
+use OCA\customprop_dict\Db\NoteMapper;
 
 class NoteService {
 

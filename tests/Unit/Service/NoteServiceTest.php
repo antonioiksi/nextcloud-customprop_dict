@@ -1,15 +1,15 @@
 <?php
 
-namespace OCA\NotesTutorial\Tests\Unit\Service;
+namespace OCA\customprop_dict\Tests\Unit\Service;
 
-use OCA\NotesTutorial\Service\NoteNotFound;
+use OCA\customprop_dict\Service\NoteNotFound;
 use PHPUnit\Framework\TestCase;
 
 use OCP\AppFramework\Db\DoesNotExistException;
 
-use OCA\NotesTutorial\Db\Note;
-use OCA\NotesTutorial\Service\NoteService;
-use OCA\NotesTutorial\Db\NoteMapper;
+use OCA\customprop_dict\Db\Note;
+use OCA\customprop_dict\Service\NoteService;
+use OCA\customprop_dict\Db\NoteMapper;
 
 class NoteServiceTest extends TestCase {
 	private $service;

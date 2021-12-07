@@ -1,8 +1,8 @@
 <?php
 
-namespace OCA\NotesTutorial\Tests\Unit\Controller;
+namespace OCA\customprop_dict\Tests\Unit\Controller;
 
-use OCA\NotesTutorial\Controller\NoteApiController;
+use OCA\customprop_dict\Controller\NoteApiController;
 
 class NoteApiControllerTest extends NoteControllerTest {
 	public function setUp(): void {

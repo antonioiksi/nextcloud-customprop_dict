@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OCA\NotesTutorial\Migration;
+namespace OCA\customprop_dict\Migration;
 
 use Closure;
 use OCP\DB\ISchemaWrapper;
@@ -21,8 +21,8 @@ class Version000000Date20181013124731 extends SimpleMigrationStep {
 		/** @var ISchemaWrapper $schema */
 		$schema = $schemaClosure();
 
-		if (!$schema->hasTable('notestutorial')) {
-			$table = $schema->createTable('notestutorial');
+		if (!$schema->hasTable('customprop_dict')) {
+			$table = $schema->createTable('customprop_dict');
 			$table->addColumn('id', 'integer', [
 				'autoincrement' => true,
 				'notnull' => true,
@@ -41,7 +41,7 @@ class Version000000Date20181013124731 extends SimpleMigrationStep {
 			]);
 
 			$table->setPrimaryKey(['id']);
-			$table->addIndex(['user_id'], 'notestutorial_user_id_index');
+			$table->addIndex(['user_id'], 'customprop_dict_user_id_index');
 		}
 		return $schema;
 	}

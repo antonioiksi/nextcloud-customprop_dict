@@ -1,15 +1,15 @@
 <?php
 
-namespace OCA\NotesTutorial\Tests\Integration\Controller;
+namespace OCA\customprop_dict\Tests\Integration\Controller;
 
 use OCP\AppFramework\App;
 use OCP\IRequest;
 use PHPUnit\Framework\TestCase;
 
 
-use OCA\NotesTutorial\Db\Note;
-use OCA\NotesTutorial\Db\NoteMapper;
-use OCA\NotesTutorial\Controller\NoteController;
+use OCA\customprop_dict\Db\Note;
+use OCA\customprop_dict\Db\NoteMapper;
+use OCA\customprop_dict\Controller\NoteController;
 
 class NoteIntegrationTest extends TestCase {
 	private $controller;

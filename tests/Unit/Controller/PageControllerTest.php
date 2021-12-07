@@ -1,6 +1,6 @@
 <?php
 
-namespace OCA\NotesTutorial\Controller;
+namespace OCA\customprop_dict\Controller;
 
 use PHPUnit\Framework\TestCase;
 
